@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="nav-menu">
+                <div class="opt">
+                    <li type="none">
+                        <a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a>    
+                    </li>
+                </div>
+
+                <div class="opt">
+                    <li type="none">
+                        <a href="#" id="search"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a>    
+                    </li>
+                </div>
+            </div>
+            
+            <div class="library">
+                <div class="library-option">
+                    <div >
+                        <img src="/assets/library_icon.png" alt="">
+                        <span>Your Library</span>
+                    </div>
+                    <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                
+
+                <div class="library-content">
+                    <div class="lib-box">
+                        <div class="box-p1">Create Your Playlists</div>
+                        <div class="box-p2">Create the playlist .We'll help you!</div>
+                        <button class="badge">Create Playlist</button>
+                    </div>
+
+                    <div class="lib-box">
+                        <div class="box-p1">Let's find some podcast to follow</div>
+                        <div class="box-p2">We'll keep you updated on new episodes</div>
+                        <button class="badge">Browse podcast</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="nav-bar">
+                <div class="arrows">
+                    <div class="btn"><i class="fa-solid fa-chevron-left left-btn"></i></div>
+                    <div class="btn hide"><i class="fa-solid fa-chevron-right right-btn hide"></i></div>    
+                </div>
+                <div class="options">
+                    <div class="explr btn1 hide"><button id="explore" >Explore Premium</button></div>
+                    <div class="btn1 app"><button id="ins-app"><i class="fa-regular fa-circle-down"></i>Install App</button></div>
+                    <div class="user"><i class="fa-regular fa-user"></i></div>
+                </div>    
+            </div>
+            <div class="main-content">
+               <h2>Recently Played</h2>
+                <div class="collection">
+                    <div class="card">
+                        <img src="./assets/card1.jpg" alt="photo 1">
+                        <p class="card-title">Janiye</p>
+                        <p class="card-info">Vishal Mishra</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/card2.jpeg" alt="photo 1">
+                        <p class="card-title">Chanakya Niti</p>
+                        <p class="card-info">Kiran Chavda</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/card6.jpeg" alt="photo 1">
+                        <p class="card-title">Tollywood Hits</p>
+                        <p class="card-info">Kiran Chavda</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card5.jpeg" alt="photo 1">
+                        <p class="card-title">Horror Nights</p>
+                        <p class="card-info">Kiran Chavda</p>
+                    </div>
+                </div>
+
+                <h2>Spotify original & execlusive show</h2>
+                <div class="collection">
+                    <div class="card">
+                        <img src="./assets/card3.jpeg" alt="photo 1">
+                        <p class="card-title">Janiye</p>
+                        <p class="card-info">Vishal Mishra</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/card4.jpg" alt="photo 1">
+                        <p class="card-title">Chanakya Niti</p>
+                        <p class="card-info">Kiran Chavda</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card5.jpeg" alt="photo 1">
+                        <p class="card-title">Chanakya Niti</p>
+                        <p class="card-info">Kiran Chavda</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/card6.jpeg" alt="photo 1">
+                        <p class="card-title">Chanakya Niti</p>
+                        <p class="card-info">Kiran Chavda</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card1.jpg" alt="photo 1">
+                        <p class="card-title">Janiye</p>
+                        <p class="card-info">Vishal Mishra</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/card2.jpeg" alt="photo 1">
+                        <p class="card-title">Chanakya Niti</p>
+                        <p class="card-info">Kiran Chavda</p>
+                    </div>
+                </div>
+
+                <h2>Show to try</h2>
+                <div class="collection">
+                    <div class="card">
+                        <img src="./assets/card1.jpg" alt="photo 1">
+                        <p class="card-title">Janiye</p>
+                        <p class="card-info">Vishal Mishra</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/card2.jpeg" alt="photo 1">
+                        <p class="card-title">Chanakya Niti</p>
+                        <p class="card-info">Kiran Chavda</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card5.jpeg" alt="photo 1">
+                        <p class="card-title">Chanakya Niti</p>
+                        <p class="card-info">Kiran Chavda</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/card6.jpeg" alt="photo 1">
+                        <p class="card-title">Chanakya Niti</p>
+                        <p class="card-info">Kiran Chavda</p>
+                    </div>
+                
+                    <div class="about">
+                        <div class="description">
+                            <div class="section">
+                                <h3 class="h1">Company</h3>
+                                <p class="sp">Jobs</p>
+                                <p class="sp">About</p>
+                                <p class="sp">For The Record</p>
+                            </div>
+                            <div class="section">
+                                <h3 class="h1">Communities</h3>
+                                <p class="sp">Artists</p>
+                                <p class="sp">Developers</p>
+                                <p class="sp">Advertising</p>
+                                <p class="sp">Investors</p>
+                                <p class="sp">Vendors</p>
+                            </div>
+                            <div class="section">
+                                <h3 class="h1">Useful links</h3>
+                                <p class="sp">Support</p>
+                                <p class="sp">For Mobile App</p>
+                            </div>
+                        </div>
+                        <div class="icons">
+                            <div class="social-media"><i class="fa-brands fa-instagram"></i></div>
+                            <div class="social-media"><i class="fa-brands fa-twitter"></i></div>
+                            <div class="social-media"><i class="fa-brands fa-facebook"></i></div>
+                        </div>
+
+                        <div class="footer">
+                            <hr>
+                            <div class="last">
+                                <div class="last-option"><p>Legel</p></div>
+                                <div class="last-option"><p>Privacy Center</p></div>
+                                <div class="last-option"><p>Privacy Policy</p></div>
+                                <div class="last-option"><p>Cookies</p></div>
+                                <div class="last-option"><p>About Ads</p></div>
+                                <div class="last-option"> <p>Accessibility</p></div> 
+                                <div class="last-option"><p>Samiksha Srivastav <i class="fa-regular fa-copyright"></i></p></div> 
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="music-player">
+           <div class="left">
+                <div class="photo">
+                    <img src="/assets/card1.jpg" alt="">
+                </div>
+                <div class="about-song">
+                    <p><a href="#">Janiye</a><br>
+                    <a href="#">Vishal Mishra</a></p>
+                </div>
+                <div class="extra-icons">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <i class="fa-solid fa-images"></i>
+                </div>
+
+           </div>
+           <div class="middle">
+                <div class="controls">
+                    <i class="fa-solid fa-shuffle side-icon" style="font-size: 1rem;margin-top:10px;"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-circle-pause" style="font-size: 2.5rem; margin-bottom: 15px;" ></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat side-icon" style="font-size: 1rem; margin-top:10px;"></i>
+                </div>
+                <div class="play-bar">
+                    <span class="time">00:05</span>
+                    <input type="range" min="0" max="100" class="progress-bar">
+                    <span class="time" id="tot-time">03:45</span>
+                </div>
+           </div>
+           <div class="right">
+                <i class="fa-solid fa-compact-disc"></i>
+                <i class="fa-solid fa-bars-staggered"></i>
+                <i class="fa-solid fa-camera-retro"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range">
+           </div>
+        </div>
+    </div>
+</body>
+</html>
